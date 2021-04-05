@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    
+        body {background-color: #f3ecf3;}
+        /*h1   {color: #361379;}*/
+        .MainHeading
+        {
+          color: #660394;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        p  {color: black;}
+        .MainHeading{
+          font-size: 40px;
+        }
+        .MK {
+            color: #ACDF87;
+            font-family: Arial, Helvetica, sans-serif;
+          
+        }
+        .BB{
+            color:#add8e6;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .PB{
+            color: #add8e6;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .Berry{
+            color:#F1ABB9;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .JC{
+            color:#f79862;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .MM{
+            color:#f79862;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img{
+          width: 100%;
+        }
+        button{
+          margin-left : 5px;
+          margin-top: auto;
+          margin-bottom:auto;
+        }
+        .model {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+/* model Content */
+        .model-content {
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid #888;
+        width: 80%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+        }
+
+       
+/* Add Animation */
+        @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0} 
+        to {top:0; opacity:1}
+        }
+
+        @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+        }
+
+/* The Close Button */
+        .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        }
+
+        .close2 {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        }
+
+        .close2:hover,
+        .close2:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        }
+
+        .close3 {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        }
+
+        .close3:hover,
+        .close3:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        }
+
+        .close4 {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        }
+
+        .close4:hover,
+        .close4:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        }
+
+        .close5 {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        }
+
+        .close5:hover,
+        .close5:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        }
+        
+        .close6 {
+        color: white;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        }
+
+        .close6:hover,
+        .close6:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        }
+
+
+
+
+        .model-header {
+        padding: 2px 16px;
+        background-color: #ACDF87;
+        color: white;
+        }
+
+        .model-body {
+        padding: 2px 16px;
+        background-color:#f3ecf3;
+        }
+
+        .model-footer {
+        padding: 2px 16px;
+        background-color: #ACDF87;
+        }
+
+        .model-headerP {
+        padding: 2px 16px;
+        background-color:#add8e6;
+        color: white;
+        }
+        .model-footerP {
+        padding: 2px 16px;
+        background-color: #add8e6;
+        color: white;
+        }
+
+        .model-headerB {
+        padding: 2px 16px;
+        background-color: #F1ABB9;
+        color: white;
+        }
+        .model-footerB {
+        padding: 2px 16px;
+        background-color: #F1ABB9;
+        color: white;
+        }
+
+        .model-headerC {
+        padding: 2px 16px;
+        background-color: #f79862;
+        color: white;
+        }
+        .model-footerC {
+        padding: 2px 16px;
+        background-color: #f79862;
+        color: white;
+        }
+
+
+
+
+
+
+
+</style>
+
+<body>
+<h1 class="Brand">
+    <img src="https://www.jugojuice.com/assets/logo-e4c19ce9e7d2db4b16951fa694c1ffcc.png" alt="Jugo Juice" style="width:auto;height:auto; size:100px ">
+</h1>
+<h1 class="MainHeading">
+  <span style='font-size:55px;'>&#128129;</span>Recommendations for Newcomers
+  <br>
+  And for Those Who Can't Decide <span style='font-size:30px;'>&#128526;</span>
+</h1>
+
+
+
+    <p class="MK" style="font-size: 40px;">
+        <img src="https://prod-jugojuice.s3.amazonaws.com/products/17/en:/original/Mighty-Kale-flat.jpg" alt="Mighty Kale" style="width:258px;height:258px; left:10px">
+        <br>
+        <b>Mighty Kale</b>
+        <button id="myBtn" style="padding: 7px 7px; margin: -3px"><b>LEARN MORE</b></button>
+        <div id="mymodel" class="model">
+
+            <!-- model content -->
+            <div class="model-content">
+              <div class="model-header">
+                <span class="close">&times;</span>
+                <h1 style="color:#f3ecf3; font-family: Arial, Helvetica, sans-serif;">Mighty Kale [Veggie]</h1>
+              </div>
+              <div class="model-body">
+                <pre style="font-size: 12px;  font-family: Arial, sans-serif;">
+                    Fruit(Frozen): Mango & Pineapple
+                    Juice(0% Sugar): Orange & Apple
+                    Veggie(Fresh): Kale & Spinach
+
+                    <u>Description</u>
+                    Sounds health, looks healthy,
+                    BUT it taste sweat, NOT healthy.
+                    DON'T let the GREEN overcome you!
+
+                    Calories: 292.0                   
+                </pre>
+              </div>
+              <div class="model-footer">
+                <h1 style="color:#f3ecf3;  font-family: Arial, Helvetica, sans-serif; font-size: 25px">$7.25 <sub>Before Tax</sub></h1>
+              </div>
+            </div>
+          
+          </div>
+  
+    </p>
+<br>
+      <p class="BB" style="font-size: 40px; ">
+        <img src="https://prod-jugojuice.s3.amazonaws.com/products/26/en:/original/Big-Blue-Protein-flat.jpg" alt="Big Blue" style="width:258px;height:258px; left:10px">
+        <br>    
+        <b>Big Blue</b>
+            <button id="myBtn2" style="padding: 7px 7px; margin: -3px"><b>LEARN MORE</b></button>
+            <div id="mymodel2" class="model">
+
+              <!-- model content -->
+              <div class="model-content">
+                <div class="model-headerP">
+                  <span class="close2">&times;</span>
+                  <h1 style="color:#f3ecf3; font-family: Arial, Helvetica, sans-serif;">Big Blue [Protein]</h1>
+                </div>
+                <div class="model-body">
+                  <pre style="font-size: 12px; font-family: Arial, sans-serif;">
+                    Fruit(Frozen): Blueberries & Banana
+                    Juice(0% Sugar): Apple
+                    Protein: Valina Whey
+                    Dairy: Frozen Yogurt(No Sugar)
+
+                    <u>Description</u>
+                    Great tasting meal replacement! 
+                    The smoothie is a bit watery.
+
+                    Calories: 322.0
+                </pre>
+                </div>
+                <div class="model-footerP">
+                  <h1 style="color:#f3ecf3; font-family: Arial, Helvetica, sans-serif; font-size: 25px">$7.75 <sub>Before Tax</sub></h1>
+                </div>
+              </div>
+              
+              </div>
+      
+        </p>
+    <br>
+    <p class="PB"style="font-size: 40px;">
+      <img src="https://prod-jugojuice.s3.amazonaws.com/products/73/en:/original/pb_protein.jpg" alt="PB Protein" style="width:258px;height:258px; left:10px">
+      <br>
+      <b>#PB Protein</b>
+      <button id="myBtn3" style="padding: 7px 7px; margin: -3px"><b>LEARN MORE</b></button>
+        <div id="mymodel3" class="model">
+
+          <!-- model content -->
+          <div class="model-content">
+            <div class="model-headerP">
+              <span class="close3">&times;</span>
+              <h1 style="color:#f3ecf3; font-family: Arial, Helvetica, sans-serif;">#PB Protein [Protein]</h1>
+            </div>
+            <div class="model-body">
+              <pre style="font-size: 12px; font-family: Arial, sans-serif;">
+                Fruit(Frozen): Banana
+                Dairy: Unsweetened Chocolate Almond Milk
+                Protein: Chocolate Whey
+                Included: All Natural Peanut Butter
+
+                <u>Description</u>
+                The smoothie taste like chocolate icecream.
+                Perfect protein for beginners!
+
+                Calories: 440.0
+            </pre>
+            </div>
+            <div class="model-footerP">
+              <h1 style="color:#f3ecf3; font-family: Arial, Helvetica, sans-serif; font-size: 25px">$7.25 <sub>Before Tax</sub></h1>
+            </div>
+          </div>
+          
+          </div>
+  
+    </p>
+<br>
+    <p class="Berry"style="font-size: 40px;">
+      <img src="https://prod-jugojuice.s3.amazonaws.com/products/24/en:/original/Berry-Bannana-flat.jpg" alt="Berry Banana" style="width:258px;height:258px; left:10px">
+      <br>
+      <b>Berry Banana</b>
+      <button id="myBtn4" style="padding: 7px 7px; margin: -3px"><b>LEARN MORE</b></button>
+      <div id="mymodel4" class="model">
+
+        <!-- model content -->
+        <div class="model-content">
+          <div class="model-headerB">
+            <span class="close4">&times;</span>
+            <h1 style="color:#f3ecf3; font-family: Arial, sans-serif;">Berry Banana [Super]</h1>
+          </div>
+          <div class="model-body">
+            <pre style="font-size: 12px; font-family: Arial;">
+              Fruit(Frozen): Strawberries, Blueberries, Banana
+              Juice(0% Sugar): Apple
+              Dairy(Sugar Free): Greek Yogurt
+
+              <u>Description</u>
+              Essential to healthy digestion.
+              What looks good, tastes good.
+
+              Calories: 269.0
+          </pre>
+          </div>
+          <div class="model-footerB">
+            <h1 style="color:#f3ecf3; font-family: Arial, Helvetica, sans-serif; font-size: 25px">$6.45 <sub>Before Tax</sub></h1>
+          </div>
+        </div>
+        
+        </div>
+
+  </p>
+<br>
+  <p class="JC" style="font-size: 40px;">
+    <img src="https://prod-jugojuice.s3.amazonaws.com/products/1/en:/original/Classico-flat.jpg" alt="Jugo Classico" style="width:258px;height:258px; left:10px">
+    <br>
+    <b>Jugo Classico</b>
+    <button id="myBtn5" style="padding: 7px 7px; margin: -3px"><b>LEARN MORE</b></button>
+    <div id="mymodel5" class="model">
+
+      <!-- model content -->
+      <div class="model-content">
+        <div class="model-headerC">
+          <span class="close5">&times;</span>
+          <h1 style="color:#f3ecf3; font-family: Arial, Helvetica, sans-serif;">Jugo Classico [Classic]</h1>
+        </div>
+        <div class="model-body">
+          <pre style="font-size: 12px; font-family: Arial, sans-serif;">
+            Fruit(Frozen): Starberries, Banana
+            Juice(0% Sugar): Orange, Apple
+
+            <u>Description</u>
+            The classic of classics.
+            Great for smoothie beginners.
+            Can't decide what to get? Go for Jugo Classico!
+
+            Calories: Snack(157.0) & Original(267.0)
+        </pre>
+        </div>
+        <div class="model-footerC">
+          <h1 style="color:#f3ecf3; font-family: Arial, Helvetica, sans-serif; font-size: 25px"><b>ONLY $1 Difference</b> <br>
+            <p style="color: #f3ecf3; font-family: Arial, Helvetica, sans-serif;">
+            Snack: $4.95 <sub>Before Tax</sub> <br> Original: $5.95 <sub>Before Tax</sub>
+            </p>
+        </h1>
+        </div>
+      </div>
+      
+      </div>
+
+</p>
+<br>
+<p class="MM"style="font-size: 40px;">
+  <img src="https://prod-jugojuice.s3.amazonaws.com/products/5/en:/original/Mango-Magic-flat.jpg" alt="Mango Magic" style="width:258px;height:258px; left:10px">
+  <br>
+  <b>Mango Magic</b>
+  <button id="myBtn6" style="padding: 7px 7px; margin: -3px"><b>LEARN MORE</b></button>
+  <div id="mymodel6" class="model">
+
+    <!-- model content -->
+    <div class="model-content">
+      <div class="model-headerC">
+        <span class="close6">&times;</span>
+        <h1 style="color: #f3ecf3; font-family: Arial, Helvetica, sans-serif;">Mango Magic [Classic]</h1>
+      </div>
+      <div class="model-body">
+        <pre style="font-size: 12px; font-family: Arial, sans-serif;">
+          Fruit(Frozen): Mango
+          Juice(0% Sugar): Orange, Tropical
+
+          <u>Description</u>
+          Mango ONLY!
+          Great for Mango Lovers. 
+
+          Calories: Snack(175.0) & Original(303.0)
+      </pre>
+      </div>
+      <div class="model-footerC">
+        <h1 style="color:#f3ecf3; font-family: Arial, Helvetica, sans-serif; font-size: 25px"><b>ONLY $1 Difference</b> <br>
+          <p style="color: #f3ecf3; font-family: Arial, sans-serif;">
+            Snack: $4.95 <sub>Before Tax</sub> <br> Original: 5.95 <sub>Before Tax</sub>
+            </p>
+      </h1>
+      </div>
+    </div>
+    
+    </div>
+
+</p>
+
+</body>
+
+
+
+   
+<script>
+    var model = document.getElementById("mymodel");
+
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the model
+    var span = document.getElementsByClassName("close")[0];
+
+
+    // When the user clicks the button, open the model 
+    btn.onclick = function() {
+    model.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the model
+    span.onclick = function() {
+    model.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the model, close it
+    window.onclick = function(event) {
+    if (event.target == model) {
+        model.style.display = "none";
+    }
+    }
+    </script>
+
+<script>
+    var model2 = document.getElementById("mymodel2");
+
+    var btn2 = document.getElementById("myBtn2");
+
+    // Get the <span> element that closes the model
+    var span2 = document.getElementsByClassName("close2")[0];
+
+
+    // When the user clicks the button, open the model 
+    btn2.onclick = function() {
+    model2.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the model
+    span2.onclick = function() {
+    model2.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the model, close it
+    window.onclick = function(event) {
+    if (event.target == model2) {
+        model2.style.display = "none";
+    }
+    }
+    </script>
+
+<script>
+    var model3 = document.getElementById("mymodel3");
+
+    var btn3 = document.getElementById("myBtn3");
+
+    // Get the <span> element that closes the model
+    var span3 = document.getElementsByClassName("close3")[0];
+
+
+    // When the user clicks the button, open the model 
+    btn3.onclick = function() {
+    model3.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the model
+    span3.onclick = function() {
+    model3.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the model, close it
+    window.onclick = function(event) {
+    if (event.target == model3) {
+        model3.style.display = "none";
+    }
+    }
+    </script>
+
+<script>
+  var model4 = document.getElementById("mymodel4");
+
+  var btn4 = document.getElementById("myBtn4");
+
+  // Get the <span> element that closes the model
+  var span4 = document.getElementsByClassName("close4")[0];
+
+
+  // When the user clicks the button, open the model 
+  btn4.onclick = function() {
+  model4.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the model
+  span4.onclick = function() {
+  model4.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the model, close it
+  window.onclick = function(event) {
+  if (event.target == model4) {
+      model4.style.display = "none";
+  }
+  }
+  </script>
+
+<script>
+  var model5 = document.getElementById("mymodel5");
+
+  var btn5 = document.getElementById("myBtn5");
+
+  // Get the <span> element that closes the model
+  var span5 = document.getElementsByClassName("close5")[0];
+
+
+  // When the user clicks the button, open the model 
+  btn5.onclick = function() {
+  model5.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the model
+  span5.onclick = function() {
+  model5.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the model, close it
+  window.onclick = function(event) {
+  if (event.target == model5) {
+      model5.style.display = "none";
+  }
+  }
+  </script>
+
+<script>
+  var model6 = document.getElementById("mymodel6");
+
+  var btn6 = document.getElementById("myBtn6");
+
+  // Get the <span> element that closes the model
+  var span6 = document.getElementsByClassName("close6")[0];
+
+
+  // When the user clicks the button, open the model 
+  btn6.onclick = function() {
+  model6.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the model
+  span6.onclick = function() {
+  model6.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the model, close it
+  window.onclick = function(event) {
+  if (event.target == model6) {
+      model6.style.display = "none";
+  }
+  }
+  </script>
+
+
+
+
+   
+
+</html>
